@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+
+</head>
+<style>
+      @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .hero-title {
+      font-size: 48px;
+      color: #fbf8f8;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+      /* Apply the animation to the hero-title class */
+      animation: fadeInAnimation 1s ease;
+    }
+
+    /* Add transition animation for features */
+    .features {
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .feature {
+      text-align: center;
+      max-width: 300px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: scale(1.1);
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    .feature-title {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+      /* Add transition animation for feature titles */
+      transition: color 0.3s ease;
+    }
+
+    .feature:hover .feature-title {
+      color: #a9cc0a;
+    }
+
+    .feature-text {
+      font-size: 16px;
+      color: #555;
+    }
+  /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset some default styles */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation bar */
+header {
+  background-color: #fffefe;
+  color: #020202;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center; /* Center items vertically */
+}
+
+.logo {
+  font-family: Arial, sans-serif; /* Use a font of your choice */
+  font-size: 24px;
+  font-weight: bold;
+  color: #7e1084; /* Change the color to black */
+  margin-right: auto; /* Move the logo to the left corner */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Use flex to align navigation links */
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav li a {
+  color: #000000;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav li a:hover {
+  background-color: #d4b1f0;
+}
+
+
+/* Header (Hero) styles */
+.hero {
+  text-align: center;
+  background: url('backg.avif') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  color: #fbf8f8;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-btn {
+  display: inline-block;
+  background-color: hsl(7, 9%, 83%);
+  color: #111010;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #d62ea9;
+}
+
+/* Features section styles */
+.features {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature {
+  text-align: center;
+  max-width: 300px;
+}
+
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer styles */
+.site-footer {
+    background-color: #ca43c839;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the footer content */
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+    <label class="logo">CodeWise</label>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <header class="hero">
+    <h1 class="hero-title">Language Learning Platform</h1>
+    <p class="hero-text">
+      "Welcome to CodeWise - Your Path to Coding Excellence! Unlock the world of programming with our comprehensive courses, real-world projects, and supportive coding community. Start your coding journey today and become a proficient developer with CodeWise."
+    </p>
+    <a href="#" class="hero-btn">Get Started</a>
+  </header>
+
+  <section class="features">
+    <div class="feature">
+      <img src="python.jpg" alt="Feature Icon 1" class="feature-icon">
+      <h2 class="feature-title">Python</h2>
+      <p class="feature-text">"Unlock the potential of Python with CodeWise -Learn to code, build applications, and advance your skills with our expert-led courses."</p>
+    </div>
+
+    <div class="feature">
+      <img src="cloud.webp" alt="Feature Icon 2" class="feature-icon">
+      <h2 class="feature-title">Cloud Computing</h2>
+      <p class="feature-text">"Master Cloud Computing with CodeWise - Unlock the full potential of the cloud."</p>
+    </div>
+
+    <div class="feature">
+      <img src="java.webp" alt="Feature Icon 3" class="feature-icon">
+      <h2 class="feature-title">Java</h2>
+      <p class="feature-text">"Level up in Java with CodeWise - Build robust applications and elevate your coding prowess."</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2023 <CodeWise class="!"></CodeWise> All rights reserved.</p>
+        <p>Contact: contact@codewise.com</p>
+        <p>Follow us on social media: <a href="https://twitter.com/yourwebsite" target="_blank">Twitter</a> | <a href="https://www.facebook.com/yourwebsite" target="_blank">Facebook</a></p>
+
+    </div>
+</footer>
+</body>
+</html>
